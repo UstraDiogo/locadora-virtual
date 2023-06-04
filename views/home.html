@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../assets/icon.PNG">
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth-compat.js"></script>
+    <title>Home</title>
+</head>
+
+<body background="../assets/background.jpg">
+    <header class="menu">
+        <div>
+            <h1>
+                <a class="botao_home" href="../index.html">DustFlix</a>
+            </h1>
+        </div>
+        <nav class="menu_botoes">
+            <a href="./views/filmes.html">Filmes</a>
+            <a href="./views/series.html">Series</a>
+        </nav>
+        <div class="logoff">
+            <button type="button" class="sair" onclick="logout()">Log out </button>
+        </div>
+    </header>
+
+    <section class="bloco_principal">
+        <div class="filmes_lancamentos">
+            <a href="./views/filmes.html">Filmes</a>
+        </div>
+        <div Class="series">
+            <a href="./views/series.html">Series</a>
+        </div>
+    </section>
+
+    <section class="bloco_grade">
+
+    </section>
+
+
+    <footer>
+        <div class="adicionais">
+            <ul>
+                <a>Dúvidas</a>
+                <a>Conta</a>
+                <a>Formas de pagamento</a>
+            </ul>
+            <ul>
+                <a href="https://portifolio-six-murex.vercel.app/">Quem somos</a>
+                <a>Suporte</a>
+                <a>Central de ajuda</a>
+            </ul>
+
+
+        </div>
+
+    </footer>
+</body>
+
+<script src="../js/home.js"></script>
+<script src="../js/firebase-init.js"></script>
+<script src="../js/auth-guard.js"></script>
+
+
+
+
+</html>

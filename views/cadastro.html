@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../assets/icon.PNG">
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth-compat.js"></script>
+    <script src="../js/valida_login.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<body background="../assets/background.jpg">
+    <header class="menu">
+        <div class="botao_index">
+            <h1><a class="botao_home" href="../index.html">DustFlix</a></h1>
+        </div>
+
+    </header>
+    <section class="bloco_principal">
+        <form action="../index.html">
+            <label>Faça seu cadastro</label>
+            <div>
+                <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com">
+            </div>
+            <div class="error" id="email-required-error">
+                Email é obrigatório
+            </div>
+            <div class="error" id="email-invalid-error">
+                Email inválido
+            </div>
+            <div>
+                <label></label>
+                <input type="password" name="password" id="password" onchange="onChangePassword()" placeholder="Senha">
+            </div>
+            <div class="error" id="password-required-error">
+                Senha é obrigatório
+            </div>
+            <div class="error" id="password-min-length-error">
+                A senha tem que ter no mínimo 6 caracteres
+            </div>
+            <label></label>
+            <input type="password" name="password" id="confirmPassword" onchange="onChangeConfirmPassword()"
+                placeholder="Confirmar Senha">
+            </div>
+            <div class="error" id="password-doesnt-match-error">
+                As senhas digitadas devem ser iguais
+            </div>
+            <div>
+                <button type="button" id="enter-button" disabled="true" onclick="cadastro()">Cadastrar</button>
+            </div>
+    </section>
+    </form>
+
+</body>
+
+<script src="../js/cadastro.js"></script>
+<script src="../js/validacao.js"></script>
+<script src="../js/loading.js"></script>
+<script src="../js/firebase-init.js"></script>
+<script src="../js/valida_login.js"></script>
+
+
+
+</html>
