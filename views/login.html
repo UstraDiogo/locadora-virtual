@@ -12,34 +12,54 @@
     <title>Login</title>
 </head>
 
-<body background="../assets/background.jpg">
-    <header class="menu">
-        <div class="botao_index">
-            <h1><a class="botao_home" href="../index.html">DustFlix</a></h1>
-        </div>
+<body>
+    <div class="page">
+        <header class="menu">
+            <div class="botao_index">
+                <h1><a class="botao_home" href="../index.html">DustFlix</a></h1>
+            </div>
 
-    </header>
-    <section class="bloco_principal">
-        <form>
-            <label>Entre com seu login</label>
-            <div>
-                <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com">
+        </header>
+        <section class="bloco_principal">
+            <form>
+                <label>Entre com seu login</label>
+                <div>
+                    <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com">
+                </div>
+                <div class="error" id="email-required-error">Email é obrigatório</div>
+                <div class="error" id="email-invalid-error">Email inválido</div>
+                <div>
+                    <label></label>
+                    <input type="password" name="password" id="password" onchange="onChangePassword()"
+                        placeholder="password">
+                </div>
+                <div class="error" id="password-required-error">Senha é obrigatória</div>
+                <div>
+                    <button type="button" id="enter-button" onclick="login()" disabled="true">Entrar</button>
+                    <a href="./recuperar_senha.html">Recuperar senha</a>
+                </div>
+                <label><strong>Novo por aqui?</strong> </label><a href="./cadastro.html">Cadastre-se</a>
+
+            </form>
+        </section>
+
+        <footer>
+            <div class="adicionais">
+                <ul class="rodape">
+                    <a>Dúvidas</a>
+                    <a href="https://portifolio-six-murex.vercel.app/">Quem somos</a>
+                </ul>
+                <ul class="rodape">
+                    <a>Formas de pagamento</a>
+                    <a>Minha conta</a>
+                </ul>
+                <ul class="rodape">
+                    <a>Suporte</a>
+                    <a>Central de ajuda</a>
+                </ul>
             </div>
-            <div class="error" id="email-required-error">Email é obrigatório</div>
-            <div class="error" id="email-invalid-error">Email inválido</div>
-            <div>
-                <label></label>
-                <input type="password" name="password" id="password" onchange="onChangePassword()"
-                    placeholder="password">
-            </div>
-            <div class="error" id="password-required-error">Senha é obrigatória</div>
-            <div>
-                <button type="button" id="enter-button" onclick="login()" disabled="true">Entrar</button>
-                <a href="./recuperar_senha.html">Recuperar senha</a>
-            </div>
-            <label><strong>Novo por aqui?</strong> </label><a href="./cadastro.html">Cadastre-se</a>
-    </section>
-    </form>
+        </footer>
+    </div>
 
 </body>
 
