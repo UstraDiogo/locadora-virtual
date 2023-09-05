@@ -13,47 +13,67 @@
     <title>Cadastro</title>
 </head>
 
-<body background="../assets/background.jpg">
-    <header class="menu">
-        <div class="botao_index">
-            <h1><a class="botao_home" href="../index.html">DustFlix</a></h1>
-        </div>
+<body>
+    <div class="page">
+        <header class="menu">
+            <div class="botao_index">
+                <h1><a class="botao_home" href="../index.html">DustFlix</a></h1>
+            </div>
 
-    </header>
-    <section class="bloco_principal">
-        <form action="../index.html">
-            <label>Faça seu cadastro</label>
-            <div>
-                <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com">
+        </header>
+        <section class="bloco_principal">
+            <form action="../index.html">
+                <label>Faça seu cadastro</label>
+                <div>
+                    <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com">
+                </div>
+                <div class="error" id="email-required-error">
+                    Email é obrigatório
+                </div>
+                <div class="error" id="email-invalid-error">
+                    Email inválido
+                </div>
+                <div>
+                    <label></label>
+                    <input type="password" name="password" id="password" onchange="onChangePassword()"
+                        placeholder="Senha">
+                </div>
+                <div class="error" id="password-required-error">
+                    Senha é obrigatório
+                </div>
+                <div class="error" id="password-min-length-error">
+                    A senha tem que ter no mínimo 6 caracteres
+                </div>
+                <div>
+                    <label></label>
+                    <input type="password" name="password" id="confirmPassword" onchange="onChangeConfirmPassword()"
+                        placeholder="Confirmar Senha">
+                </div>
+                <div class="error" id="password-doesnt-match-error">
+                    As senhas digitadas devem ser iguais
+                </div>
+                <div>
+                    <button type="button" id="enter-button" disabled="true" onclick="cadastro()">Cadastrar</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div class="adicionais">
+                <ul class="rodape">
+                    <a>Dúvidas</a>
+                    <a href="https://portifolio-six-murex.vercel.app/">Quem somos</a>
+                </ul>
+                <ul class="rodape">
+                    <a>Formas de pagamento</a>
+                    <a>Minha conta</a>
+                </ul>
+                <ul class="rodape">
+                    <a>Suporte</a>
+                    <a>Central de ajuda</a>
+                </ul>
             </div>
-            <div class="error" id="email-required-error">
-                Email é obrigatório
-            </div>
-            <div class="error" id="email-invalid-error">
-                Email inválido
-            </div>
-            <div>
-                <label></label>
-                <input type="password" name="password" id="password" onchange="onChangePassword()" placeholder="Senha">
-            </div>
-            <div class="error" id="password-required-error">
-                Senha é obrigatório
-            </div>
-            <div class="error" id="password-min-length-error">
-                A senha tem que ter no mínimo 6 caracteres
-            </div>
-            <label></label>
-            <input type="password" name="password" id="confirmPassword" onchange="onChangeConfirmPassword()"
-                placeholder="Confirmar Senha">
-            </div>
-            <div class="error" id="password-doesnt-match-error">
-                As senhas digitadas devem ser iguais
-            </div>
-            <div>
-                <button type="button" id="enter-button" disabled="true" onclick="cadastro()">Cadastrar</button>
-            </div>
-    </section>
-    </form>
+        </footer>
+    </div>
 
 </body>
 

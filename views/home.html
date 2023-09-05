@@ -12,53 +12,54 @@
     <title>Home</title>
 </head>
 
-<body background="../assets/background.jpg">
-    <header class="menu">
-        <div>
-            <h1>
-                <a class="botao_home" href="../index.html">DustFlix</a>
-            </h1>
-        </div>
-        <nav class="menu_botoes">
-            <a href="./views/filmes.html">Filmes</a>
-            <a href="./views/series.html">Series</a>
-        </nav>
-        <div class="logoff">
-            <button type="button" class="sair" onclick="logout()">Log out </button>
-        </div>
-    </header>
+<body>
+    <div class="page">
+        <header class="menu">
+            <div>
+                <h1>
+                    <a class="botao_home" href="../index.html">DustFlix</a>
+                </h1>
+            </div>
+            <nav class="menu_botoes">
+                <a href="./views/filmes.html">Filmes</a>
+                <a href="./views/series.html">Series</a>
+            </nav>
+            <div class="logoff">
+                <button type="button" class="sair" onclick="logout()">Log out </button>
+            </div>
+        </header>
 
-    <section class="bloco_principal">
-        <div class="filmes_lancamentos">
-            <a href="./views/filmes.html">Filmes</a>
-        </div>
-        <div Class="series">
-            <a href="./views/series.html">Series</a>
-        </div>
-    </section>
+        <section class="bloco_principal">
+            <div class="filmes_lancamentos">
+                <a href="./views/filmes.html">Filmes</a>
+            </div>
+            <div Class="series">
+                <a href="./views/series.html">Series</a>
+            </div>
+        </section>
 
-    <section class="bloco_grade">
+        <section class="bloco_grade">
 
-    </section>
-
-
-    <footer>
-        <div class="adicionais">
-            <ul>
-                <a>Dúvidas</a>
-                <a>Conta</a>
-                <a>Formas de pagamento</a>
-            </ul>
-            <ul>
-                <a href="https://portifolio-six-murex.vercel.app/">Quem somos</a>
-                <a>Suporte</a>
-                <a>Central de ajuda</a>
-            </ul>
+        </section>
 
 
-        </div>
-
-    </footer>
+        <footer>
+            <div class="adicionais">
+                <ul class="rodape">
+                    <a>Dúvidas</a>
+                    <a href="https://portifolio-six-murex.vercel.app/">Quem somos</a>
+                </ul>
+                <ul class="rodape">
+                    <a>Formas de pagamento</a>
+                    <a>Minha conta</a>
+                </ul>
+                <ul class="rodape">
+                    <a>Suporte</a>
+                    <a>Central de ajuda</a>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 
 <script src="../js/home.js"></script>
